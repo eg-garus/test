@@ -32,7 +32,9 @@
             tabPage1 = new TabPage();
             tabPage2 = new TabPage();
             tabPage3 = new TabPage();
+            label1 = new Label();
             tabControl1.SuspendLayout();
+            tabPage1.SuspendLayout();
             SuspendLayout();
             // 
             // tabControl1
@@ -48,6 +50,7 @@
             // 
             // tabPage1
             // 
+            tabPage1.Controls.Add(label1);
             tabPage1.Location = new Point(4, 34);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
@@ -76,6 +79,15 @@
             tabPage3.Text = "More";
             tabPage3.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(332, 62);
+            label1.Name = "label1";
+            label1.Size = new Size(136, 25);
+            label1.TabIndex = 0;
+            label1.Text = "МОЖЕТ ТАК???";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -85,6 +97,8 @@
             Name = "Form1";
             Text = "Form1";
             tabControl1.ResumeLayout(false);
+            tabPage1.ResumeLayout(false);
+            tabPage1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -94,5 +108,6 @@
         private TabPage tabPage1;
         private TabPage tabPage2;
         private TabPage tabPage3;
+        private Label label1;
     }
 }
