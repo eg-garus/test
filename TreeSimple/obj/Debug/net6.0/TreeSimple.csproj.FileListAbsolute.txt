@@ -1,0 +1,15 @@
+C:\Users\user\OneDrive\Документы\GitHub\test\TreeSimple\bin\Debug\net6.0\TreeSimple.exe
+C:\Users\user\OneDrive\Документы\GitHub\test\TreeSimple\bin\Debug\net6.0\TreeSimple.deps.json
+C:\Users\user\OneDrive\Документы\GitHub\test\TreeSimple\bin\Debug\net6.0\TreeSimple.runtimeconfig.json
+C:\Users\user\OneDrive\Документы\GitHub\test\TreeSimple\bin\Debug\net6.0\TreeSimple.dll
+C:\Users\user\OneDrive\Документы\GitHub\test\TreeSimple\bin\Debug\net6.0\TreeSimple.pdb
+C:\Users\user\OneDrive\Документы\GitHub\test\TreeSimple\obj\Debug\net6.0\TreeSimple.csproj.AssemblyReference.cache
+C:\Users\user\OneDrive\Документы\GitHub\test\TreeSimple\obj\Debug\net6.0\TreeSimple.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\OneDrive\Документы\GitHub\test\TreeSimple\obj\Debug\net6.0\TreeSimple.AssemblyInfoInputs.cache
+C:\Users\user\OneDrive\Документы\GitHub\test\TreeSimple\obj\Debug\net6.0\TreeSimple.AssemblyInfo.cs
+C:\Users\user\OneDrive\Документы\GitHub\test\TreeSimple\obj\Debug\net6.0\TreeSimple.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\Документы\GitHub\test\TreeSimple\obj\Debug\net6.0\TreeSimple.dll
+C:\Users\user\OneDrive\Документы\GitHub\test\TreeSimple\obj\Debug\net6.0\refint\TreeSimple.dll
+C:\Users\user\OneDrive\Документы\GitHub\test\TreeSimple\obj\Debug\net6.0\TreeSimple.pdb
+C:\Users\user\OneDrive\Документы\GitHub\test\TreeSimple\obj\Debug\net6.0\TreeSimple.genruntimeconfig.cache
+C:\Users\user\OneDrive\Документы\GitHub\test\TreeSimple\obj\Debug\net6.0\ref\TreeSimple.dll

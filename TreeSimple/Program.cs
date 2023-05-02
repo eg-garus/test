@@ -1,4 +1,7 @@
-﻿namespace TreeSimple
+﻿using System.Data;
+using System.Xml.Linq;
+
+namespace TreeSimple
 {
     internal class Program
     {
@@ -7,17 +10,17 @@
             private char info; // информационное поле 
             private TreeNode left; // ссылка на левое поддерево
             private TreeNode right; // ссылка на правое поддерево
-            public char Info 
-            { 
+            public char Info
+            {
                 get { return info; }
                 set { info = value; }
             }                               // свойства 
-            public TreeNode Left 
+            public TreeNode Left
             {
                 get { return left; }
                 set { left = value; }
             }
-            public TreeNode Right 
+            public TreeNode Right
             {
                 get { return right; }
                 set { right = value; }
@@ -45,15 +48,15 @@
                 root = null;
             }
 
-        }
+        
         public void KLP(TreeNode root)
         {                                                       // root – ссылка на корень дерева и любого из поддеревьев             
-                if (root != null)                                // дерево не пусто? 
-                {                                                // распечатать информ. поле корневого узла 
-                    Console.WriteLine(root.Info);
-                    KLP(root.Left);                             // обойти левое поддерево в нисходящем порядке 
-                    KLP(root.Right);                            // обойти правое поддерево в нисходящем порядке 
-                }
+            if (root != null)                                // дерево не пусто? 
+            {                                                // распечатать информ. поле корневого узла 
+                Console.WriteLine(root.Info);
+                KLP(root.Left);                             // обойти левое поддерево в нисходящем порядке 
+                KLP(root.Right);                            // обойти правое поддерево в нисходящем порядке 
+            }
         }
         public void LKP(TreeNode root)
         {
@@ -80,15 +83,38 @@
             {
                 n = 0;
             }
-            else 
+            else
             {
-                n =  1 + CurentRoot(root.Left) + CurentRoot(root.Right);
+                n = 1 + CurentRoot(root.Left) + CurentRoot(root.Right);
             }
             return n;
         }
+        public TreeNode CreateRecursive(int n)
+        {
+            char x; TreeNode root;
+            if (n == 0) root = null;
+            else
+            {
+
+                Console.Write("Введите инф поле = ");
+                while ((!Char.TryParse(Console.ReadLine(), out x)))
+                {
+                    Console.Write("Вы ввели не число ^char^! Введите число: ");
+                }
+                root = new TreeNode(x);
+                root.Left = CreateRecursive(n / 2);
+                root.Right = CreateRecursive(n - n / 2 - 1);
+            }
+            return root;
+        }
+    }
         static void Main(string[] args)
         {
-
+            BinaryTree T = new BinaryTree();
+            T.Root = T.CreateRecursive(7);
+            T.KLP(T.Root);
+            T.LKP(T.Root);
+            Console.WriteLine(T.CurentRoot(T.Root));
         }
     }
 }
